@@ -1,0 +1,47 @@
+<div class="hero">
+    <!--- Cash and Bonus -->
+    <section id="cash-bonus" style="display: none;">
+        <div class="layout">
+            <div><h5>Cash</h5><p>¥0.00</p></div>
+            <div><h5>Bonus</h5><p>¥0.00</p></div>
+        </div>
+    </section>
+
+    <!--search/game-filter-->
+    <section id="search-game"></section>
+
+    <!--carousel-main-->
+    <section id="carousel-main" class="carousel" data-ride="carousel"></section>
+</div>
+<div class="section-group">
+    <!--new-games-->
+    <section id="new-games" class="game-block"></section>
+
+    <!-- tile-blocks -->
+    <section id="cards-home" class="card-group"></section>
+
+    <!-- provider-of-the-month -->
+    <section id="provider-games" class="game-block"></section>
+
+    <!-- tile-blocks -->
+    <section id="cards-tournament" class="card-group"></section>
+
+    <!-- provider-of-the-month -->
+    <section id="livecasino-games" class="game-block"></section>
+</div>
+<script>
+// SEARCH - load
+$('#search-game').load('search.html');
+
+// BANNER SLIDER - load
+$('#carousel-main').load('carousel-main.html');
+
+// BLOCK GAMES SQUARE - load
+$('#new-games').load('block-games-square.html');
+$('#provider-games').load('block-games-square.html');
+$('#livecasino-games').load('block-games-square.html');
+
+// TILES - load
+$('#cards-home').load('cards-home.html');
+$('#cards-tournament').load('cards-tournament.html');
+</script>

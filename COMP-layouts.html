@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="assets/styles/styles.css" rel="stylesheet" />
+  <title>Grid Flex Layouts</title>
+
+  <style>
+    h5, h6, code {
+      color: #333;
+    }
+  </style>
+
+</head>
+
+<body>
+
+<div class="demo-layouts">
+
+  <h5>1 Column x 1 Row Formats</h5>
+  <div id="section-f">
+  <h6>Section F</h6>
+  <code>
+    display: flex; <br>
+    justify-content: center;
+  </code>
+    <div class="block">
+      <div class="element1">1</div>
+    </div>
+  </div>
+  <div id="section-m">
+  <h6>Section M</h6>
+  <code>
+    display: flex;
+  </code>
+    <div class="block">
+      <div class="element1">1</div>
+    </div>
+  </div>
+  
+<!-- 1 COLUMN /-->
+
+  <h5>1 Column x 2 Rows Formats</h5>
+
+  <div id="section-g">
+  <h6>Section G</h6>
+  <code>
+    display: flex; <br>
+    flex-direction: column; <br>
+    align-items: center;
+  </code>
+    <div class="block">
+      <div class="element1">1</div>
+      <div class="element2">2</div>
+    </div>
+  </div>
+
+  <div id="section-l">
+  <h6>Section L</h6>
+  <code>
+    display: grid; <br>
+    grid-template-columns: 100%;
+  </code>
+    <div class="block">
+      <div class="element1">1</div>
+      <div class="element2">2</div>
+    </div>
+  </div>
+
+  <h5>1 Column x 3 Rows Formats</h5>
+
+  <div id="section-s">
+  <h6>Section S</h6>
+  <code>
+    display: grid; <br>
+    grid-template-columns: 100%;
+  </code>
+    <div class="block">
+      <div class="element1">1</div>
+      <div class="element2">2</div>
+      <div class="element3">3</div>
+    </div>
+  </div>
+
+  <h5>1 Column x Multi Rows Formats</h5>
+  
+  <div id="section-j">
+  <h6>Section J</h6>
+  <code>
+    display: grid; <br>
+    grid-template-columns: 100%;
+  </code>
+    <div class="block">
+      <div class="element1">1</div>
+      <div class="element2">2</div>
+      <div class="element3">3</div>
+      <div class="element1">1</div>
+      <div class="element2">2</div>
+      <div class="element3">3</div>
+      <div class="element1">1</div>
+      <div class="element2">2</div>
+      <div class="element3">3</div>
+    </div>
+  </div>
+
+  <!-- 2 COLUMNS /-->
+
+  <h5>2 Columns x 1 Row Formats</h5>
+
+  <div id="section-c">
+  <h6>Section C</h6>
+  <code>
+    display: grid; <br>
+    grid-template-columns: 50% 50%;
+  </code>
+    <div class="block">
+      <div class="element1">1</div>
+      <div class="element2">2</div>
+    </div>
+  </div>
+
+  <div id="section-d">
+  <h6>Section D</h6>
+  <code>
+    display: grid; <br>
+    grid-template-columns: 50% 50%; <br>
+    .children { <br>
+      width: 100%; <br>
+    }
+  </code>
+    <div class="block">
+      <div class="element1">1</div>
+      <div class="element2">2</div>
+    </div>
+  </div>
+
+  <div id="section-v">
+    <h6>Section V</h6>
+    <code>
+      display: grid;<br>
+      grid-template-columns: 1fr 1fr;
+    </code>
+    <div class="block">
+      <div class="element1">1</div>
+      <div class="element2">2</div>
+    </div>
+  </div>
+
+  <div id="section-e">
+  <h6>Section E</h6>
+  <code>
+    display: grid; <br>
+    grid-template-columns: 1fr auto;
+  </code>
+    <div class="block">
+      <div class="element1">1</div>
+      <div class="element2">2</div>
+    </div>
+  </div>
+
+  <div id="section-p">
+  <h6>Section P</h6>
+  <code>
+    display: flex; <br>
+    width: 100%;
+  </code>
+    <div class="block">
+      <div class="element1">1</div>
+      <div class="element2">2</div>
+    </div>
+  </div>
+
+  <div id="section-i">
+  <h6>Section I</h6>
+  <code>
+    display: flex; <br>
+  </code>
+    <div class="block">
+      <div class="element1">1</div>
+      <div class="element2">2</div>
+    </div>
+  </div>
+
+  <div id="section-n">
+  <h6>Section N</h6>
+  <code>
+    display: flex; <br>
+    justify-content: center;
+  </code>
+    <div class="block">
+      <div class="element1">1</div>
+      <div class="element2">3</div>
+    </div>
+  </div>
+
+  <div id="section-r">
+  <h6>Section R</h6>
+  <code>
+    display: flex; <br>
+    justify-content: space-between; <br>
+    align-items: flex-end;
+  </code>
+    <div class="block">
+      <div class="element3">3</div>
+      <div class="element2">2</div>
+    </div>
+  </div>
+
+  <div id="section-h">
+  <h6>Section H</h6>
+  <code>
+    display: flex; <br>
+    justify-content: space-between;
+  </code>
+    <div class="block">
+      <div class="element1">1</div>
+      <div class="element2">2</div>
+    </div>
+  </div>
+
+  <div id="section-t">
+  <h6>Section T</h6>
+  <code>
+    display: grid;<br>
+    grid-template-columns: 1fr 1fr 1fr;
+  </code>
+    <div class="block">
+      <div class="element1">1</div>
+      <div class="element2">2</div>
+    </div>
+  </div>
+
+  <div id="section-u">
+    <h6>Section U</h6>
+    <code>
+      display: grid;<br>
+      grid-template-columns: auto; <br>
+      @media only screen and (min-width: 576px) <br>
+      .block { <br>
+          grid-template-columns: 1fr 1fr; <br>
+      }
+    </code>
+      <div class="block">
+        <div class="element1">1</div>
+        <div class="element2">2</div>
+      </div>
+    </div>
+
+    <div id="section-1">
+      <h6>Section 1</h6>
+      <code>
+        display: grid;<br>
+        grid-template-columns: auto auto; <br>
+        width: fit-content; <br>
+        margin: 0 auto;
+      </code>
+      <div class="block">
+        <div class="element1">1</div>
+        <div class="element2">2</div>
+      </div>
+    </div>
+
+<!-- 3 COLUMNS /-->
+
+  <h5>3 Columns x 1 Row Formats</h5>
+  <div id="section-a">
+  <h6>Section A</h6>
+  <code>
+    display: flex; <br>
+    justify-content: space-between; <br>
+    align-items: center; <br>
+    position: relative; <br>
+    .element2 { <br>
+    position: absolute; <br>
+    top: 50%; <br>
+    left: 50%; <br>
+    transform: translate(-50%, -50%); <br>
+    }
+  </code>
+    <div class="block">
+      <div class="element1">1</div>
+      <div class="element2">2</div>
+      <div class="element3">3</div>
+    </div>
+  </div>
+
+  <div id="section-b">
+  <h6>Section B</h6>
+  <code>
+    display: grid; <br>
+    grid-template-columns: 33.33% 33.33% 33.33%; <br>
+    align-items: center;
+  </code>
+    <div class="block">
+      <div class="element1">1</div>
+      <div class="element2">2</div>
+      <div class="element3">3</div>
+    </div>
+  </div>
+
+  <div id="section-q">
+  <h6>Section Q</h6>
+  <code>
+    display: grid; <br>
+    grid-template-columns: repeat(auto-fit, minmax(14.1rem, 1fr));
+  </code>
+    <div class="block">
+      <div class="element1">1</div>
+      <div class="element2">2</div>
+      <div class="element3">3</div>
+    </div>
+  </div>
+
+  <div id="section-x">
+    <h6>Section X</h6>
+    <code>
+      display: grid; <br>
+      grid-template-columns: auto auto auto; <br>
+      .child { <br>
+        width: auto; <br>
+      }
+    </code>
+    <div class="block">
+      <div class="element1">1</div>
+      <div class="element2">2</div>
+      <div class="element3">3</div>
+    </div>
+  </div>
+
+  <div id="section-y">
+    <h6>Section Y</h6>
+    <code>
+      display: grid; <br>
+      grid-template-columns: auto auto auto; <br>
+      justify-self: right;
+    </code>
+    <div class="block">
+      <div class="element1">1</div>
+      <div class="element2">2</div>
+      <div class="element3">3</div>
+    </div>
+  </div>
+
+  <!-- MULTI COLUMNS /-->
+
+  <h5>Multi Columns Formats</h5>
+
+  <div id="section-k">
+  <h6>Section K</h6>
+  <code>
+    display: flex; <br>
+  </code>
+    <div class="block">
+      <div class="element1">1</div>
+      <div class="element2">2</div>
+      <div class="element1">1</div>
+      <div class="element2">2</div>
+      <div class="element1">1</div>
+      <div class="element2">2</div>
+      <div class="element1">1</div>
+      <div class="element2">2</div>
+      <div class="element1">1</div>
+      <div class="element2">2</div>
+      <div class="element1">1</div>
+      <div class="element2">2</div>
+      <div class="element1">1</div>
+      <div class="element2">2</div>
+      <div class="element1">1</div>
+      <div class="element2">2</div>
+      <div class="element1">1</div>
+      <div class="element2">2</div>
+      <div class="element1">1</div>
+      <div class="element2">2</div>
+      <div class="element1">1</div>
+      <div class="element2">2</div>
+      <div class="element1">1</div>
+      <div class="element2">2</div>
+      <div class="element1">1</div>
+      <div class="element2">2</div>
+      <div class="element1">1</div>
+      <div class="element2">2</div>
+      <div class="element1">1</div>
+      <div class="element2">2</div>
+      <div class="element1">1</div>
+      <div class="element2">2</div>
+      <div class="element1">1</div>
+      <div class="element2">2</div>
+      <div class="element1">1</div>
+      <div class="element2">2</div>
+    </div>
+  </div>
+
+  <div id="section-o">
+  <h6>Section O</h6>
+  <code>
+    display: flex; <br>
+    flex-wrap: wrap;
+  </code>
+    <div class="block">
+      <div class="element1">1</div>
+      <div class="element2">2</div>
+      <div class="element1">1</div>
+      <div class="element2">2</div>
+      <div class="element1">1</div>
+      <div class="element2">2</div>
+      <div class="element1">1</div>
+      <div class="element2">2</div>
+      <div class="element1">1</div>
+      <div class="element2">2</div>
+      <div class="element1">1</div>
+      <div class="element2">2</div>
+      <div class="element1">1</div>
+      <div class="element2">2</div>
+      <div class="element1">1</div>
+      <div class="element2">2</div>
+      <div class="element1">1</div>
+      <div class="element2">2</div>
+      <div class="element1">1</div>
+      <div class="element2">2</div>
+      <div class="element1">1</div>
+      <div class="element2">2</div>
+      <div class="element1">1</div>
+      <div class="element2">2</div>
+      <div class="element1">1</div>
+      <div class="element2">2</div>
+      <div class="element1">1</div>
+      <div class="element2">2</div>
+      <div class="element1">1</div>
+      <div class="element2">2</div>
+      <div class="element1">1</div>
+      <div class="element2">2</div>
+      <div class="element1">1</div>
+      <div class="element2">2</div>
+      <div class="element1">1</div>
+      <div class="element2">2</div>
+    </div>
+  </div>
+
+  <div id="section-w">
+    <h6>Section W</h6>
+    <code>
+      display: grid; <br>
+      grid-template-columns: repeat(auto-fit, minmax(2rem, 1fr)); <br>
+      .child { width: 100%; }
+    </code>
+      <div class="block">
+        <div class="element1">1</div>
+        <div class="element2">2</div>
+        <div class="element1">1</div>
+        <div class="element2">2</div>
+        <div class="element1">1</div>
+        <div class="element2">2</div>
+        <div class="element1">1</div>
+        <div class="element2">2</div>
+        <div class="element1">1</div>
+        <div class="element2">2</div>
+        <div class="element1">1</div>
+        <div class="element2">2</div>
+        <div class="element1">1</div>
+        <div class="element2">2</div>
+        <div class="element1">1</div>
+        <div class="element2">2</div>
+        <div class="element1">1</div>
+        <div class="element2">2</div>
+        <div class="element1">1</div>
+        <div class="element2">2</div>
+        <div class="element1">1</div>
+        <div class="element2">2</div>
+        <div class="element1">1</div>
+        <div class="element2">2</div>
+        <div class="element1">1</div>
+        <div class="element2">2</div>
+        <div class="element1">1</div>
+        <div class="element2">2</div>
+        <div class="element1">1</div>
+        <div class="element2">2</div>
+        <div class="element1">1</div>
+        <div class="element2">2</div>
+        <div class="element1">1</div>
+        <div class="element2">2</div>
+        <div class="element1">1</div>
+        <div class="element2">2</div>
+      </div>
+    </div>
+
+    <!-- MULTI ROWS /-->
+
+  <h5>Multi Rows Formats</h5>
+
+  <div id="section-z">
+    <h6>Section Z</h6>
+    <code>
+      display: grid; <br>
+      grid-template-columns: 100%; <br>
+      .children { <br>
+        margin: 0 auto; <br>
+      }
+    </code>
+      <div class="block">
+        <div class="element1">1</div>
+        <div class="element2">2</div>
+        <div class="element3">3</div>
+        <div class="element1">1</div>
+        <div class="element2">2</div>
+        <div class="element3">3</div>
+      </div>
+    </div>
+
+    <div id="section-2">
+      <h6>Section 2</h6>
+      <code>
+        display: flex;
+        justify-content: flex-end; <br>
+      </code>
+      <div class="block">
+        <div class="element1">1</div>
+        <div class="element2">2</div>
+        <div class="element1">1</div>
+        <div class="element2">2</div>
+      </div>
+    </div>
+
+</div>
+
+</body>
+</html>

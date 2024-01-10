@@ -1,0 +1,42 @@
+<h2 class="navi-logo">
+  <a href="#" class="icon icon-logo">Logo</a>
+</h2>
+
+<div class="nav-menu">
+  <button id="nav-close" class="button button-icon nobg" onclick="toggleNav()"><i class="icon icon-close">Close</i></button>
+  <h3 class="title">Menu</h3>
+  <button id="nav-notification" class="button button-icon nobg"><i class="icon icon-bell">Bell</i></button>
+  <button id="nav-home" class="button button-icon nobg"><i class="icon icon-logo-min">Home</i></button>
+</div>
+
+<section id="nav-hero">
+  <button class="button-secondary" onclick="navWidthStatusLoginButton()">Log In</button>
+  <p>Still not a member? <a href="#">Join now</a></p>
+</section>
+
+<ul class="nav-item-group">
+  <li class="nav-item all-games"><a href="#" class="nav-inner" onclick="openPages()"><i class="icon icon-allgames"></i>All games<i class="icon icon-chevronRight"></i></a></li>
+  <li class="nav-item live-casino"><a href="#" class="nav-inner" onclick="openPages()"><i class="icon icon-livecasino"></i>Live casino<i class="icon icon-chevronRight"></i></a></li>
+  <li class="nav-item slots"><a href="#" class="nav-inner" onclick="openPages()"><i class="icon icon-slots"></i>Slots<i class="icon icon-chevronRight"></i></a></li>
+  <li class="nav-item tablegames"><a href="#" class="nav-inner" onclick="openPages()"><i class="icon icon-tablegames"></i>Table games<i class="icon icon-chevronRight"></i></a></li>
+  <li class="nav-item shop"><a href="#" class="nav-inner" onclick="openShop()"><i class="icon icon-shop"></i>The Shop<i class="icon icon-chevronRight"></i></a></li>
+  <li class="nav-item promotions"><a href="javascript:;" id="promotions" data-page="promotions.html" data-title="Promotions" class="nav-inner" onclick="loadPage(this)"><i class="icon icon-promotions"></i>Promotions<i class="icon icon-chevronRight"></i></a></li>
+
+  <li class="nav-item bonuses">
+    <a href="#" class="nav-inner" onclick="openBonus()"><i class="icon icon-gift"></i>Our casino bonuses<i class="icon icon-chevronRight"></i></a>
+  </li>
+  <li class="nav-item program"><a href="#" class="nav-inner" onclick="openProgram()"><i class="icon icon-loyalty"></i>Loyalty Program<i class="icon icon-chevronRight"></i></a></li>
+  <li class="nav-item tournaments"><a href="#" class="nav-inner" onclick="openTournaments()"><i class="icon icon-trophy"></i>Tournaments<i class="icon icon-chevronRight"></i></a></li>
+  <li class="nav-item more-info"><a href="#" class="nav-inner about" onclick="openAbout()"><i class="icon icon-info"></i>More info<i class="icon icon-chevronRight"></i></a></li>
+  <li class="nav-item help-center">
+    <div class="nav-inner"><i class="icon icon-help"></i>Help Center</div>
+    <section class="cta-group">
+      <button class="button-tertiary">I need help</button>
+    </section>
+  </li>
+  <li class="nav-item language"><a href="#" class="nav-inner" onclick="openLanguage()"><i class="icon icon-settings"></i>Change language<i class="icon icon-chevronRight"></i></a></li>
+
+  <li class="nav-item login">
+    <a href="#" class="nav-inner" onclick="navWidthStatusLoginButton()"><i class="icon icon-arrowRight"></i>Log in</a>
+  </li>
+</ul>

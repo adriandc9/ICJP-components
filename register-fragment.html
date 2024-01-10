@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="assets/scripts/jquery-3.6.0.min.js"></script>
+<script src="assets/scripts/scripts.js"></script>
+<link href="assets/styles/styles.css" rel="stylesheet" />
+<title>Template 103 - Register Step 1</title>
+</head>
+<body id="template" class="">
+
+<div class="modal-loader">
+
+<div id="register-fragment" class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+        <button type="button" class="button-icon button-icon-notext" data-dismiss="modal" aria-label="Close" onclick="closeModal()"><i class="icon icon-close">Close</i></button>
+        <figure>
+          <img src="./assets/icons/logo.png" class="width-100 height-100">
+        </figure>
+    </div>
+    <div class="modal-body">
+      <div class="layout">
+        <section>
+          <figure>
+            <img class="banner" src="./assets/images/promo-banner.png" alt="">
+          </figure>
+        </section>
+        <form>
+          <h5>Contact information</h5>
+          <div class="form-group">
+            <label>Email</label>
+            <small class="description">Helps with verification and lost password.</small>
+            <input type="email" class="inputText" placeholder="Enter email">
+            <small class="tooltip">This field is required.</small>
+          </div>
+          <div class="form-group">
+            <label>Mobile Phone no.</label>
+            <small class="description">Helps keep your account secure.</small>
+            <input type="tel" class="inputText" placeholder="+81 90 1234 5678">
+            <small class="tooltip">This field is required.</small>
+          </div>
+          <div class="form-group">
+            <label>Password</label>
+            <small class="description">8 characters, at least one number.</small>
+            <input type="password" class="inputText">
+            <small class="tooltip">This field is required.</small>
+          </div>
+          <h5>Personal information</h5>
+          <div class="form-group">
+            <label>First name (romaji)</label>
+            <input type="text" class="inputText">
+            <small class="tooltip">This field is required.</small>
+          </div>
+          <div class="form-group">
+            <label>Last name (romaji)</label>
+            <input type="text" class="inputText">
+            <small class="tooltip">This field is required.</small>
+          </div>
+          <div class="form-group">
+            <label>First name (kanji)</label>
+            <small class="description">As written on your Driving licence/ID.</small>
+            <input type="text" class="inputText">
+            <small class="tooltip">This field is required.</small>
+          </div>
+          <div class="form-group">
+            <label>Last name (kanji)</label>
+            <small class="description">As written on your Driving licence/ID.</small>
+            <input type="text" class="inputText">
+            <small class="tooltip">This field is required.</small>
+          </div>
+          <div class="form-group">
+            <label>Currency</label>
+            <select class="width-100percent" id="input-Month" required="">
+              <option value="">JPY - Japanese Yen</option>
+              <option>USD - US Dollars</option>
+            </select>
+          </div>
+          <div class="form-group field-radio">
+            <div>
+              <input type="radio" id="male" name="gender" value="male">
+              <label for="male">Male</label>
+            </div>
+            <div>
+              <input type="radio" id="female" name="gender" value="female">
+              <label for="female">Female</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Birth date</label>
+            <input type="text" class="inputText" placeholder="mm/dd/yyyy">
+            <small class="tooltip">This field is required.</small>
+          </div>
+          <h5>Current address</h5>
+          <div class="form-group">
+            <label>Post code</label>
+            <small class="description">As written on your Utility bill.</small>
+            <input type="number" class="inputText">
+            <small class="tooltip">This field is required.</small>
+          </div>
+          <div class="cta-group">
+            <button class="button-clean">Enter address manually</button>
+          </div>
+          <div class="form-group grid grid-1fr-auto">
+            <input type="checkbox" class="" id="same-address">
+            <label>I would like to receive marketing information from VIP Casino and other brands in the same Group.</label>
+          </div>
+          <div class="cta-group">
+            <button type="button" class="button-primary" data-dismiss="modal">Create Account</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <picture>
+        <img src="./assets/icons/logo.png" class="width-100 height-100">
+        <i class="icon icon-help">20+</i>
+      </picture>
+    </div>
+  </div>
+</div>
+<div class="modal-overlay" onclick="closeModal()"></div>
+
+</div>
+
+</body>
+</html>

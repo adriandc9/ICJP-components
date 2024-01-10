@@ -1,0 +1,65 @@
+<script>
+    $(document).ready (function() {
+    var newGames = document.querySelector('.nav-centered:not()');
+    newGames.innerHTML = 'New Games';
+        $('.pre-logged-in #nav-side').load('nav-pre-login.html');
+    });
+</script>
+
+<!-- Nav Logo -->
+<a href="option-c-logged-in.html" class="header-logo"><h3 class="icon icon-logo">Brand Name</h3></a>
+<!-- Nav Menu -->
+<section id="nav-menu">
+    <button class="button icon nobg close" onclick="openPages()"><span class="icon icon-close">Close</span></button>
+    <h5>Menu</h5>
+    <button class="button icon nobg notification" onclick="openPages()"><span class="icon icon-bell">Notification</span></button>
+    <a class="button icon nobg home" href="option-c-logged-in.html"><span class="icon icon-logo-min">Home</span></a>
+</section>
+<!-- Post Login Elements -->
+<section id="nav-hero">
+    <div class="layout">
+        <h5>The Loyalty Program</h5>
+        <a href="#" class="tally-items">Your Level<span class="icon-text"><i
+            class="icon icon-level1"></i>Level Name</span></a>
+        <a href="#" class="tally-items">Coins<span class="icon-text"><i
+            class="icon icon-help"></i>0</span></a>
+        <a href="#" class="tally-items">Tickets<span class="icon-text">0</span></a>
+    </div>
+</section>
+<ul id="nav-cashbonus" class="list-item-group">
+    <li class="list-item"><a href="#" class="list-inner"></i>Cash<span class="numeric">£ 3,000</span></a></li>
+    <li class="list-item"><a href="#" class="list-inner"></i>Bonus<span class="numeric">£ 1000</span></a></li>
+</ul>
+<div class="cta-group">
+    <button class="button-primary noradius">Deposit</button>
+    <button class="button-secondary noradius">Withdraw</button>
+</div>
+<!-- List Items -->
+<ul class="list-item-group">
+    <li class="list-item nav-all-games"><a href="#" class="list-inner" onclick="openPages()"><i class="icon icon-allgames"></i>All games<i class="icon icon-chevronRight"></i></a></li>
+    <li class="list-item nav-live-casino"><a href="#" class="list-inner" onclick="openPages()"><i class="icon icon-livecasino"></i>Live casino<i class="icon icon-chevronRight"></i></a></li>
+    <li class="list-item nav-slots"><a href="#" class="list-inner" onclick="openPages()"><i class="icon icon-slots"></i>Slots<i class="icon icon-chevronRight"></i></a></li>
+    <li class="list-item nav-tablegames"><a href="#" class="list-inner" onclick="openPages()"><i class="icon icon-tablegames"></i>Table games<i class="icon icon-chevronRight"></i></a></li>
+    <li class="list-item nav-shop"><a href="#" class="list-inner" onclick="openShop()"><i class="icon icon-shop"></i>The Shop<i class="icon icon-chevronRight"></i></a></li>
+    <li class="list-item nav-promotions"><a href="#" class="list-inner" onclick="openPromotions()"><i class="icon icon-promotions"></i>Promotions<i class="icon icon-chevronRight"></i></a></li>
+
+    <li class="list-item nav-transactions"><a href="#" class="list-inner" onclick="openPages()"><i class="icon icon-transactions"></i>Transactions<i class="icon icon-chevronRight"></i></a></li>
+    <li class="list-item nav-account"><a href="#" class="list-inner" onclick="openPages()"><i class="icon icon-profile"></i>Account<i class="icon icon-chevronRight"></i></a></li>
+    <li class="list-item nav-bonus-info"><a href="#" class="list-inner" onclick="openPages()"><i class="icon icon-gift"></i>Bonus info<i class="icon icon-chevronRight"></i></a></li>
+
+    <li class="list-item nav-tournaments"><a href="#" class="list-inner" onclick="openTournaments()"><i class="icon icon-trophy"></i>Tournaments<i class="icon icon-chevronRight"></i></a></li>
+    <li class="list-item nav-more-info"><a href="#" class="list-inner" onclick="openAbout()"><i class="icon icon-info"></i>More info<i class="icon icon-chevronRight"></i></a></li>
+
+    <li class="list-item nav-help-center">
+        <div class="list-inner"><i class="icon icon-help"></i>Help Center</div>
+        <section>
+          <button class="button-tertiary">I need help</button>
+        </section>
+      </li>
+    <li class="list-item nav-logout">
+        <a href="./index.html" class="list-inner def"><i class="icon icon-arrowRight"></i>Log out</a>
+        <a href="./option-a.html" class="list-inner op-a"><i class="icon icon-arrowRight"></i>Log out</a>
+        <a href="./option-b.html" class="list-inner op-b"><i class="icon icon-arrowRight"></i>Log out</a>
+        <a href="./option-c.html" class="list-inner op-c"><i class="icon icon-arrowRight"></i>Log out</a>
+    </li>
+</ul>
